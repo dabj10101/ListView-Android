@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myandroidapp.fcmdbdemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headingText"
+        android:text="Heading Appering Here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Heading: "
+        tools:layout_editor_absoluteY="162dp"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        tools:layout_editor_absoluteY="209dp"
+        tools:layout_editor_absoluteX="28dp"
+        android:id="@+id/headingInput"
+        />
+
+    <android.support.v7.widget.AppCompactButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="197dp"
+        tools:layout_editor_absoluteX="268dp"
+        android:onClick="submitHeading"
+        android:text="Submit"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Font Color: "
+        tools:layout_editor_absoluteY="264dp"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbRed"
+        android:text="RED"
+        android:onClick="onRadioButtonClicked"
+        tools:layout_editor_absoluteY="312dp"
+        tools:layout_editor_absoluteX="48dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbBlue"
+        android:text="BLUE"
+        android:onClick="onRadioButtonClicked"
+
+        tools:layout_editor_absoluteY="364dp"
+        tools:layout_editor_absoluteX="48dp" />
+
+</android.support.constraint.ConstraintLayout>
